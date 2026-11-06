@@ -1,0 +1,14 @@
+{
+  "agent": "auditor",
+  "decisions": [
+    {
+      "id": 1,
+      "ts": "2026-11-06T21:20:39Z",
+      "kind": "rejected",
+      "mint": "So11111111111111111111111111111111111111112",
+      "title": "Rejected SMK",
+      "subtitle": "Auditor \u00b7 freeze",
+      "value": "Skipped"
+    }
+  ]
+}

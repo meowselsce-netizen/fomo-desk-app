@@ -1,0 +1,12 @@
+# Local paper-runner state. Never commit databases, secrets, or logs.
+fomo-desk-backend/var/
+fomo-desk-backend/secrets/
+fomo-desk-backend/logs/
+fomo-desk-backend/**/__pycache__/
+fomo-desk-backend/**/.pytest_cache/
+fomo-desk-backend/**/.venv/
+.env
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db

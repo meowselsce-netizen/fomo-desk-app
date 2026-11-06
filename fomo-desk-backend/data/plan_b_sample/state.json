@@ -1,0 +1,39 @@
+{
+  "balance": 1000.0,
+  "today_pct": 0.0,
+  "multiplier": 1.0,
+  "mode": "PAPER",
+  "agents": [
+    {
+      "name": "scanner",
+      "status": "alive",
+      "label": "waiting",
+      "heartbeat": "2026-11-06T21:20:39Z"
+    },
+    {
+      "name": "auditor",
+      "status": "idle",
+      "label": "waiting",
+      "heartbeat": null
+    },
+    {
+      "name": "analyst",
+      "status": "idle",
+      "label": "rules mode",
+      "heartbeat": null
+    },
+    {
+      "name": "executor",
+      "status": "idle",
+      "label": "waiting",
+      "heartbeat": null
+    },
+    {
+      "name": "risk",
+      "status": "idle",
+      "label": "waiting",
+      "heartbeat": null
+    }
+  ],
+  "push": "telegram_only"
+}

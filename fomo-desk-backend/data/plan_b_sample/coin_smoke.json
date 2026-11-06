@@ -1,0 +1,55 @@
+{
+  "mint": "So11111111111111111111111111111111111111112",
+  "coin": {
+    "mint": "So11111111111111111111111111111111111111112",
+    "name": "Smoke",
+    "symbol": "SMK",
+    "pool": "PoolSmoke",
+    "migrated_at": "2026-11-06T21:20:39Z",
+    "creator": "Creator111",
+    "creator_balance_at_migration": 0.0,
+    "holders": 42
+  },
+  "price": 1.23,
+  "candles": [
+    {
+      "t": "2026-11-06T21:20:39Z",
+      "o": 1.23,
+      "h": 1.23,
+      "l": 1.23,
+      "c": 1.23,
+      "volume_m5": 1000.0
+    }
+  ],
+  "stats": {
+    "holders": 42,
+    "liquidity_usd": null,
+    "market_cap": null,
+    "volume_h24": null
+  },
+  "position": {
+    "id": 1,
+    "mint": "So11111111111111111111111111111111111111112",
+    "opened_at": "2026-11-06T21:20:39Z",
+    "entry_price": 1.0,
+    "size_usd": 50.0,
+    "peak_price": 1.2,
+    "stop_price": 0.94,
+    "trail_active": 0,
+    "closed_at": null,
+    "exit_price": null,
+    "exit_reason": null,
+    "pnl_usd": null,
+    "fees_usd": null,
+    "mode": "PAPER",
+    "stop_pct": 6.0,
+    "run_id": null
+  },
+  "exit_lines": {
+    "stop_pct": 6.0,
+    "trail_start_pct": 20.0,
+    "trail_pct": 12.0,
+    "timeout_h": 3.0
+  },
+  "coin_url": "https://fomo.family/coin?address=So11111111111111111111111111111111111111112&chainId=1399811149&r=savipww&source=share_link"
+}

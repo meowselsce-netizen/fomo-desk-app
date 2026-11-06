@@ -1,0 +1,121 @@
+{
+  "mode": "PAPER",
+  "stack_usd": 200.0,
+  "fomo_handle": "AsgerJepsen",
+  "profile_url": "https://fomo.family/profile/AsgerJepsen?source=share_link&r=savipww",
+  "signup_url": "https://fomo.family/r/savipww",
+  "analyst_mode": "rules",
+  "hosting_plan": "B",
+  "telegram": {
+    "connected": true,
+    "push": "telegram_only",
+    "web_push": false,
+    "note": "Plan B: Telegram only (no /api/push on static host)"
+  },
+  "settings": {
+    "mode": "PAPER",
+    "fomo_handle": "AsgerJepsen",
+    "fomo_referral": "savipww",
+    "analyst_mode": "rules",
+    "rpc_url": "https://api.mainnet-beta.solana.com",
+    "hosting_plan": "B",
+    "report_time": "07:00",
+    "timezone": "Europe/Copenhagen",
+    "scanner.min_liquidity_usd": "40000",
+    "scanner.max_top10_pct": "25",
+    "scanner.max_h1_change_pct": "80",
+    "scanner.poll_s": "60",
+    "scanner.min_pool_age_min": "10",
+    "scanner.max_wait_min": "60",
+    "scanner.runner_h24_pct": "300",
+    "auditor.enabled": "true",
+    "auditor.max_dev_pct": "5",
+    "auditor.max_top10_pct": "25",
+    "auditor.min_lp_locked_pct": "99",
+    "auditor.min_pool_age_min": "10",
+    "auditor.max_bundled": "5",
+    "auditor.max_delegated_accounts": "10",
+    "analyst.alive_6h_min": "0.70",
+    "analyst.organic_min": "0.65",
+    "analyst.chase_max": "0.30",
+    "analyst.score_min": "70",
+    "analyst.state_max_chars": "3000",
+    "risk.stop_pct": "6",
+    "risk.trail_start_pct": "20",
+    "risk.trail_pct": "12",
+    "risk.timeout_h": "3",
+    "risk.poll_s": "15",
+    "risk.no_price_polls": "4",
+    "executor.stack_usd": "200",
+    "executor.min_size_usd": "47.50",
+    "executor.under_min_policy": "bump",
+    "executor.max_liq_pct": "2",
+    "api.prices_poll_s": "60",
+    "paper.fee_bps": "30",
+    "paper.slippage_bps": "30",
+    "paper.max_quote_age_s": "20",
+    "paper.http_min_interval_s": "1.1",
+    "paper.max_backoff_s": "60"
+  },
+  "settings_grouped": {
+    "desk": {
+      "mode": "PAPER",
+      "fomo_handle": "AsgerJepsen",
+      "fomo_referral": "savipww",
+      "analyst_mode": "rules",
+      "rpc_url": "https://api.mainnet-beta.solana.com",
+      "hosting_plan": "B",
+      "report_time": "07:00",
+      "timezone": "Europe/Copenhagen"
+    },
+    "scanner": {
+      "min_liquidity_usd": "40000",
+      "max_top10_pct": "25",
+      "max_h1_change_pct": "80",
+      "poll_s": "60",
+      "min_pool_age_min": "10",
+      "max_wait_min": "60",
+      "runner_h24_pct": "300"
+    },
+    "auditor": {
+      "enabled": "true",
+      "max_dev_pct": "5",
+      "max_top10_pct": "25",
+      "min_lp_locked_pct": "99",
+      "min_pool_age_min": "10",
+      "max_bundled": "5",
+      "max_delegated_accounts": "10"
+    },
+    "analyst": {
+      "alive_6h_min": "0.70",
+      "organic_min": "0.65",
+      "chase_max": "0.30",
+      "score_min": "70",
+      "state_max_chars": "3000"
+    },
+    "executor": {
+      "stack_usd": "200",
+      "min_size_usd": "47.50",
+      "under_min_policy": "bump",
+      "max_liq_pct": "2"
+    },
+    "risk": {
+      "stop_pct": "6",
+      "trail_start_pct": "20",
+      "trail_pct": "12",
+      "timeout_h": "3",
+      "poll_s": "15",
+      "no_price_polls": "4"
+    },
+    "api": {
+      "prices_poll_s": "60"
+    },
+    "paper": {
+      "fee_bps": "30",
+      "slippage_bps": "30",
+      "max_quote_age_s": "20",
+      "http_min_interval_s": "1.1",
+      "max_backoff_s": "60"
+    }
+  }
+}

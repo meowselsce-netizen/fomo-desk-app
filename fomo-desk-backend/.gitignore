@@ -1,0 +1,11 @@
+var/
+secrets/
+logs/
+__pycache__/
+.pytest_cache/
+.venv/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+.env
