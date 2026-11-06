@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-180.png" />
+  <title>FOMO Desk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- HOME -->
+    <section id="screen-home" class="screen active">
+      <header class="top">
+        <h1>Home</h1>
+        <span id="mode-pill" class="pill paper">PAPER</span>
+      </header>
+      <div id="home-balance" class="balance">—</div>
+      <div class="subrow">
+        <span id="home-today">today —</span>
+        <span id="home-mult">×1.00</span>
+      </div>
+      <div class="card">
+        <h2>Equity</h2>
+        <div class="ranges" id="chart-ranges">
+          <button data-range="LIVE">LIVE</button>
+          <button data-range="1H">1H</button>
+          <button data-range="4H">4H</button>
+          <button data-range="1D" class="on">1D</button>
+          <button data-range="1W">1W</button>
+          <button data-range="ALL">ALL</button>
+        </div>
+        <canvas id="home-chart" class="chart" width="390" height="180"></canvas>
+      </div>
+      <div class="card">
+        <h2>Agents</h2>
+        <div class="agents" id="home-agents"></div>
+      </div>
+      <div class="card activity">
+        <h2>Activity</h2>
+        <div id="home-activity"></div>
+      </div>
+    </section>
+
+    <!-- AGENTS TAB -->
+    <section id="screen-agents" class="screen">
+      <header class="top"><h1>Agents</h1></header>
+      <div id="agents-list"></div>
+    </section>
+
+    <!-- ACCOUNT TAB -->
+    <section id="screen-account" class="screen">
+      <header class="top"><h1>Account</h1></header>
+      <div class="card">
+        <h2>Mode</h2>
+        <div class="toggle" id="mode-toggle">
+          <button data-mode="PAPER" class="on">PAPER</button>
+          <button data-mode="LIVE">LIVE</button>
+        </div>
+        <p class="note">LIVE needs you to type LIVE (Step 11). Desk stays paper until then.</p>
+      </div>
+      <div class="card">
+        <h2>Stack (USD)</h2>
+        <input id="stack-field" type="number" step="0.01" />
+      </div>
+      <div class="card">
+        <a class="rowlink" id="profile-link" href="#" target="_blank" rel="noopener">
+          <span>Your FOMO profile</span><span class="muted">Open →</span>
+        </a>
+        <button class="rowlink" id="invite-btn" type="button">
+          <span>Invite a friend</span><span class="muted">Share →</span>
+        </button>
+      </div>
+      <div class="card">
+        <h2>Telegram</h2>
+        <div id="tg-status" class="note">—</div>
+        <p class="note">Plan B: Telegram only (no web push on static host).</p>
+      </div>
+      <div class="card" id="settings-card">
+        <h2>Settings</h2>
+        <div id="settings-list"></div>
+      </div>
+    </section>
+
+    <!-- AUDITOR PUSH SCREEN -->
+    <section id="screen-auditor" class="screen push" style="display:none">
+      <button class="back" id="auditor-back">‹ Back</button>
+      <header class="top"><h1 id="auditor-title">Auditor</h1><span id="auditor-shield" class="shield">—</span></header>
+      <div class="card" id="auditor-status">taking apart…</div>
+      <div class="layers" id="auditor-layers"></div>
+      <a class="bigbtn" id="auditor-fomo" href="#" target="_blank" rel="noopener">Open on FOMO</a>
+    </section>
+
+    <!-- COIN PUSH SCREEN -->
+    <section id="screen-coin" class="screen push" style="display:none">
+      <button class="back" id="coin-back">‹ Back</button>
+      <header class="top">
+        <div>
+          <h1 id="coin-name">—</h1>
+          <div class="note" id="coin-meta">—</div>
+        </div>
+        <span id="coin-shield" class="shield">—</span>
+      </header>
+      <div class="price" id="coin-price">—</div>
+      <div class="subrow" id="coin-pnl">—</div>
+      <div class="card">
+        <canvas id="coin-chart" class="chart coin" width="390" height="220"></canvas>
+      </div>
+      <div class="stats" id="coin-stats"></div>
+      <div class="card" id="coin-position"></div>
+      <a class="bigbtn" id="coin-fomo" href="#" target="_blank" rel="noopener">Buy on FOMO</a>
+    </section>
+
+    <nav class="tabs">
+      <button data-tab="home" class="on"><span class="ico">⌂</span>Home</button>
+      <button data-tab="agents"><span class="ico">◎</span>Agents</button>
+      <button data-tab="account"><span class="ico">☺</span>Account</button>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
