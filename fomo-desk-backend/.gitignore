@@ -1,0 +1,12 @@
+var/
+secrets/
+logs/
+data/plan_b_sample/
+__pycache__/
+.pytest_cache/
+.venv/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+.env
