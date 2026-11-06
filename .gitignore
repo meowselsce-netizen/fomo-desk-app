@@ -2,6 +2,7 @@
 fomo-desk-backend/var/
 fomo-desk-backend/secrets/
 fomo-desk-backend/logs/
+fomo-desk-backend/data/plan_b_sample/
 fomo-desk-backend/**/__pycache__/
 fomo-desk-backend/**/.pytest_cache/
 fomo-desk-backend/**/.venv/
